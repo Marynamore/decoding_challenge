@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+div#all{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./markus-spiske-iar-afB0QQw-unsplash.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    opacity: 0.8;
+    overflow: hidden;
+}
+
+main.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+main.container section.text_session{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main.container section.text_session div.mirrored_text_session{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+    padding: 2em;
+}
+
+main.container section.text_session div.mirrored_text_session input{
+    border: none;
+    background-color: transparent;
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+    padding: 1em;
+    width: 100%;
+    color: white;
+    padding-left: 40px; /* Espaçamento para evitar que o texto fique sob o sinal ">" */
+}
+
+main.container section.text_session .button_decodificador{
+    display: flex;
+    margin: 1em;
+}
+
+main.container section.text_session .button_decodificador button {
+    background-color: #00ff00;
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 0.5em 0;
+    cursor: pointer;
+}
+
+main.container section.console_session{
+    margin: 2em;
+    padding: 2em;
+    background-color: black;
+    border: 1px solid #00ff00;
+    border-radius: 10px;
+    width: 50%;
+    height: 60vh;
+}
+
+main.container section.console_session textarea{
+    padding: 2em;
+    background: transparent;
+    border: none;
+    color: white;
+    font-family: monospace;
+    font-size: 16px;
+    resize: none;
+    width: 100%;
+    height: 100%;
+}
+
+#console_output {
+    outline: none; /* Remove a borda de foco quando o usuário clica no textarea */
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decoding Challenge 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="all">
+        <header>
+            <h1>Decoding Text</h1>
+        </header>
+        <main class="container">
+            <section class="text_session">
+                <div class="mirrored_text_session mirrored_input">
+                    <input type="text" name="" id="leftInput">
+                </div>
+                <p>Apenas letras minúsculas e sem acento</p>
+                <div class="button_decodificador">
+                    <button type="submit" onclick="criptografar()" id="btn_criptografar">Criptografar</button>
+
+                    <button type="submit" onclick="descriptografar()">Descriptografar</button>
+                </div>
+            </section>
+            <section class="console_session">
+                <textarea id="console_output" cols="30" rows="10"></textarea>
+            </section>
+        </main>
+        <footer></footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
