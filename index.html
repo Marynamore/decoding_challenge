@@ -3,32 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Decoding Challenge 1</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="all">
-        <header>
-            <h1>Decoding Text</h1>
+    <div class="container">
+        <header class="container_header">
+            <h1>Decodificador de Texto</h1>
+            <p>Sua ferramenta definitiva para <strong> codificar ou decodificar </strong> seu texto</p>
         </header>
-        <main class="container">
+        <main class="container_main">
             <section class="text_session">
-                <div class="mirrored_text_session mirrored_input">
-                    <input type="text" name="" id="leftInput">
-                </div>
-                <p>Apenas letras minúsculas e sem acento</p>
+                <textarea cols="30" rows="10" id="input_text" maxlength="150" placeholder="Digite seu texto"></textarea>
+                <p><i class="fa-solid fa-circle-exclamation"></i> Apenas <strong> letras Minúsculas</strong> e <strong>sem acento</strong>.</p>
                 <div class="button_decodificador">
-                    <button type="submit" onclick="criptografar()" id="btn_criptografar">Criptografar</button>
-
-                    <button type="submit" onclick="descriptografar()">Descriptografar</button>
+                    <button type="submit" onclick="btnCriptografar()">Criptografar</button>
+                    <button type="submit" onclick="btnDescriptografar()">Descriptografar</button>
                 </div>
             </section>
             <section class="console_session">
-                <textarea id="console_output" cols="30" rows="10"></textarea>
+                <textarea class="console_output" cols="30" rows="10" id="input_message" maxlength="150" placeholder="Nenhuma mensagem"></textarea>
+                <button type="submit" class="button_cop" onclick="Copiar()">Copiar</button>
             </section>
         </main>
-        <footer></footer>
     </div>
+    <footer class="container_footer">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> 2023, Marina Oliveira</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
