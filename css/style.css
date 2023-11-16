@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Press+Start+2P&family=Open+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primaria: #fff;
+    --color-fundo: gray;
+    --color-btn: #00ff00;
+    --color-letter-btn: #000;
+    --color-hover-blur: lawngreen;
+    --color-background-footer: #222;
+    --color-border-console: #00ff00b7;
+
+    --font-destaque: 'Press Start 2P';
+    --font-paragraphy: 'Courier New', Courier, monospace;
+    --font-text: 'Open Sans', sans-serif;
+
+}
+
+body{
+    color: var(--color-primaria);
+    background-color: var(--color-fundo);
+}
+
+div.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../assets/markus-spiske-iar-afB0QQw-unsplash.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    opacity: 0.9;
+    overflow: auto;
+}
+
+header.container_header{
+    text-align: center;
+}
+
+header.container_header h1{
+    font-family: var(--font-destaque);
+    margin: 2% 0 1% 0;
+}
+
+header.container_header p{
+    font-family: var(--font-paragraphy);
+    font-size: large;
+    font-weight: 500;
+    padding: .5%;
+}
+
+header.container_header strong{
+    color: var(--color-btn);
+    font-size: large;
+    font-weight: 900;
+}
+
+main.container_main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+main.container_main section.text_session{
+    display: flex;
+    flex-direction: column;
+    margin: 2.9%;
+    gap: 15px;
+}
+
+section.text_session textarea, section.console_session textarea{
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    border-radius: .5em;
+    backdrop-filter: blur(1em);
+    padding: 3.95% 3% 4.9% 3%;
+    font-family: var(--font-text);
+    font-size: medium;
+    font-weight: 600;
+    color: var(--color-primaria);
+    resize: none;
+}
+
+main.container_main section.text_session p{
+    font-family: var(--font-paragraphy);
+    text-align: center;
+    padding: 5% 0 2% 0;
+}
+
+main.container_main section.text_session strong{
+    color: var(--color-btn);
+    font-size: large;
+    font-weight: 900;
+}
+
+main.container_main section.text_session .button_decodificador{
+    display: flex;
+    gap: 17px;
+}
+
+main.container_main section.text_session .button_decodificador button{
+    width: 15rem;
+    padding: 3.5%;
+    background-color: var(--color-btn);
+    color: var(--color-letter-btn);
+    font-family: var(--font-text);
+    text-align: center;
+    font-size: large;
+    font-weight: 600;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+main.container_main section.text_session .button_decodificador button:hover{
+    background-color: var(--color-letter-btn);
+    color: var(--color-hover-blur);
+    border: 1px solid var(--color-btn);
+}
+
+main.container_main section.console_session{
+    display: flex;
+    align-items: flex-end;
+    padding: 2rem;
+    background-color: var(--color-letter-btn);
+    border: 3px solid var(--color-border-console);
+    font-size: medium;
+    border-radius: .5rem;
+}
+
+main.container_main section.console_session textarea{
+    outline: none;
+}
+
+main.container_main section.console_session .button_cop{
+    padding: 6%;
+    border: 1px solid var(--color-btn);
+    border-radius: .5rem;
+    color: var(--color-hover-blur);
+    background-color: var(--color-letter-btn);
+    font-family: var(--font-text);
+    font-size: medium;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+}
+
+main.container_main section.console_session .button_cop:hover{
+    background-color: var(--color-btn);
+    color: var(--color-letter-btn);
+}
+
+footer.container_footer{
+    backdrop-filter: blur(5em);
+    text-align: center; 
+}
+
+footer.container_footer p{
+    color: var(--color-primaria);
+    padding: 1.9%;
+    font-family: var(--font-text);
+    font-size: medium;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    header.container_header{
+        margin: 3% 2% 0 2%;
+        padding: 5% 4% 2% 4%;
+    }
+
+    header.container_header h1{
+        padding: 0 0 4% 0;
+    }
+
+    main.container_main {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main.container_main section.text_session,
+    section.console_session {
+        width: 80%;
+    }
+
+    main.container_main section.text_session .button_decodificador{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer.container_footer {
+        padding: 2rem;
+        margin-top: 2rem;
+    }
+
+    footer.container_footer p {
+        padding: 0.5rem;
+    }    
+}
