@@ -21,9 +21,9 @@
 
 *** 
 
-## O aplicativo tem a seguinte interface:
+## Assista ao vídeo do Desafio ONE
 
-:joystick: Assista ao vídeo do Challenge ONE Decodificador de Texto
+:joystick: Decodificador de Texto para uma visão mais detalhada do projeto
 <br>
 
 https://github.com/Marynamore/decoding_challenge/assets/86386469/f365bbdd-0ef9-4dc4-a0ca-93df9eee0fa7
@@ -38,6 +38,10 @@ https://github.com/Marynamore/decoding_challenge/assets/86386469/f365bbdd-0ef9-4
 ## Conclusão:
 
 Este projeto foi uma oportunidade de desenvolver minhas habilidades de programação!
+Agradeço sinceramente à Oracle, Alura e Gerando Falcões pela oportunidade proporcionada por este curso desafiador, estou ansiosa para aplicar esses conhecimentos em futuros projetos. 
+
+![bage](https://github.com/Marynamore/decoding_challenge/assets/86386469/717e5e1d-e1af-4ba3-bbef-b300b5a11a71)
+
 
 ## Licença
 
