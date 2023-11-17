@@ -65,24 +65,27 @@ main.container_main {
     justify-content: space-around;
 }
 
-main.container_main section.text_session{
+main.container_main section.text_session {
+    margin: 5% 0 2% 0;
     display: flex;
     flex-direction: column;
-    margin: 2.9%;
-    gap: 15px;
 }
 
-section.text_session textarea, section.console_session textarea{
+main.container_main section.text_session textarea{
     width: 100%;
+    backdrop-filter: blur(1em);
+    padding: 5%;
+    font-family: var(--font-text);
+}
+
+textarea{
     border: none;
     background-color: transparent;
-    border-radius: .5em;
-    backdrop-filter: blur(1em);
-    padding: 3.95% 3% 4.9% 3%;
-    font-family: var(--font-text);
+    border-radius: .5rem;
     font-size: medium;
     font-weight: 600;
     color: var(--color-primaria);
+    font-family: var(--font-text);
     resize: none;
 }
 
@@ -126,15 +129,15 @@ main.container_main section.text_session .button_decodificador button:hover{
 main.container_main section.console_session{
     display: flex;
     align-items: flex-end;
-    padding: 2rem;
+    padding: 2%;
     background-color: var(--color-letter-btn);
     border: 3px solid var(--color-border-console);
-    font-size: medium;
     border-radius: .5rem;
 }
 
 main.container_main section.console_session textarea{
     outline: none;
+    padding: 2rem;
 }
 
 main.container_main section.console_session .button_cop{
@@ -158,11 +161,11 @@ main.container_main section.console_session .button_cop:hover{
 footer.container_footer{
     backdrop-filter: blur(5em);
     text-align: center; 
+    padding: 1.8%;
 }
 
 footer.container_footer p{
     color: var(--color-primaria);
-    padding: 1.9%;
     font-family: var(--font-text);
     font-size: medium;
     font-weight: 500;
@@ -186,7 +189,7 @@ footer.container_footer p{
 
     main.container_main section.text_session,
     section.console_session {
-        width: 80%;
+        width: 70%;
     }
 
     main.container_main section.text_session .button_decodificador{
