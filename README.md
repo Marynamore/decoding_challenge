@@ -26,7 +26,8 @@
 :joystick: Assista ao vídeo do Challenge ONE Decodificador de Texto
 <br>
 
-https://github.com/Marynamore/decoding_challenge/assets/86386469/06d2838d-7b42-4e31-a4d2-c636516ac510
+https://github.com/Marynamore/decoding_challenge/assets/86386469/f365bbdd-0ef9-4dc4-a0ca-93df9eee0fa7
+
 
 ### :technologist: Tecnologias utilizadas:
 
